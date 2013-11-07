@@ -5,7 +5,11 @@ import org.codehaus.jettison.json.JSONObject;
 
 import java.sql.ResultSet;
 
+<<<<<<< HEAD
 import org.owasp.esapi.ESAPI;
+=======
+//import org.owasp.esapi.ESAPI;
+>>>>>>> origin/master
 
 /**
  * This utility will convert a database data into JSON format. Note: this java
@@ -82,8 +86,15 @@ public class ToJSON {
 
 						temp = rs.getString(column_name); // saving column data
 															// to temp variable
+<<<<<<< HEAD
 						temp = ESAPI.encoder().canonicalize(temp);  // decoding data to base state
 						temp = ESAPI.encoder().encodeForHTML(temp);	//encoding to be browser safe
+=======
+						// temp = ESAPI.encoder().canonicalize(temp); //decoding
+						// data to base state
+						// temp = ESAPI.encoder().encodeForHTML(temp);
+						// //encoding to be browser safe
+>>>>>>> origin/master
 						obj.put(column_name, temp); // putting data into JSON
 													// object
 
